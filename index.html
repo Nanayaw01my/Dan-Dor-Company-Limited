@@ -3,452 +3,577 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dan & Dor Solar Company Limited - Powering Ghana with Clean Solar Energy. Solar panel installation, inverters, batteries, and maintenance in Bogoso, Western Region, Ghana." />
-  <title>Dan & Dor Solar Company Limited | Bogoso, Ghana</title>
+  <meta name="description" content="Dan & Dor Solar Company Limited – Premium solar energy solutions for homes and businesses in Ghana. Based in Bogoso, Western Region." />
+  <title>Dan & Dor Solar | Clean Energy for Ghana</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
-  <!-- NAV -->
+  <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
-    <div class="container nav-inner">
-      <a href="#home" class="logo">
-        <span class="logo-icon"><i class="fas fa-sun"></i></span>
-        <span class="logo-text">Dan <span class="amp">&amp;</span> Dor <span class="logo-sub">Solar Co. Ltd</span></span>
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <div class="nav-logo-icon"><i class="fas fa-sun"></i></div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Dan &amp; Dor</span>
+          <span class="nav-logo-sub">Solar Co. Ltd</span>
+        </div>
       </a>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#services" class="nav-item">Services</a></li>
+        <li><a href="#process" class="nav-item">Process</a></li>
+        <li><a href="#why-solar" class="nav-item">Why Solar</a></li>
+        <li><a href="#testimonials" class="nav-item">Reviews</a></li>
+        <li><a href="#contact" class="nav-btn">Get Free Quote</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
-        <li><a href="#why-solar" class="nav-link">Why Solar</a></li>
-        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-        <li><a href="#contact" class="nav-link nav-cta">Get a Quote</a></li>
-      </ul>
     </div>
   </nav>
 
   <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-overlay"></div>
-    <div class="hero-particles" id="particles"></div>
-    <div class="container hero-content">
-      <div class="hero-badge"><i class="fas fa-leaf"></i> Ghana's Trusted Solar Partner</div>
-      <h1 class="hero-title">Powering Ghana with<br /><span class="highlight">Clean Solar Energy</span></h1>
-      <p class="hero-sub">Affordable, reliable, and sustainable solar solutions for homes and businesses across Ghana. Cut your electricity bills and stay powered — even during outages.</p>
-      <div class="hero-btns">
-        <a href="#contact" class="btn btn-primary"><i class="fas fa-bolt"></i> Get a Free Quote</a>
-        <a href="#services" class="btn btn-outline"><i class="fas fa-solar-panel"></i> Our Services</a>
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1800&q=85&fit=crop" alt="Solar panels" class="hero-img" />
+      <div class="hero-gradient"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-left">
+        <div class="hero-pill">
+          <span class="hero-pill-dot"></span>
+          Serving Ghana Since Day One
+        </div>
+        <h1 class="hero-headline">
+          Power Your World<br />
+          with <span class="hero-accent">Clean Solar</span><br />
+          Energy
+        </h1>
+        <p class="hero-desc">Ghana's most trusted solar energy company. We design, install, and maintain premium solar systems for homes and businesses — with flexible payment plans everyone can afford.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Get a Free Quote <i class="fas fa-arrow-right"></i></a>
+          <a href="#services" class="btn-ghost">Explore Services</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <strong>500+</strong>
+            <span>Installations</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <strong>5.0★</strong>
+            <span>Customer Rating</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <strong>100%</strong>
+            <span>Clean Energy</span>
+          </div>
+        </div>
       </div>
-      <div class="hero-stats">
-        <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Installations</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Clean Energy</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">5★</span><span class="stat-label">Customer Rating</span></div>
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="hero-card-icon"><i class="fas fa-bolt"></i></div>
+          <div class="hero-card-text">
+            <strong>Instant Savings</strong>
+            <span>Save up to 90% on bills</span>
+          </div>
+        </div>
+        <div class="hero-card hero-card-2">
+          <div class="hero-card-icon green"><i class="fas fa-leaf"></i></div>
+          <div class="hero-card-text">
+            <strong>Zero Emissions</strong>
+            <span>100% clean energy</span>
+          </div>
+        </div>
+        <div class="hero-card hero-card-3">
+          <div class="hero-card-icon blue"><i class="fas fa-shield-alt"></i></div>
+          <div class="hero-card-text">
+            <strong>25 Year Warranty</strong>
+            <span>Premium panels only</span>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="hero-scroll">
-      <a href="#about"><i class="fas fa-chevron-down"></i></a>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <i class="fas fa-chevron-down"></i>
     </div>
   </section>
 
+  <!-- LOGO STRIP -->
+  <div class="trust-bar">
+    <div class="trust-bar-inner">
+      <span>Trusted by homeowners, businesses, schools &amp; churches across Ghana</span>
+      <div class="trust-icons">
+        <i class="fas fa-home"></i>
+        <i class="fas fa-building"></i>
+        <i class="fas fa-church"></i>
+        <i class="fas fa-school"></i>
+        <i class="fas fa-hospital"></i>
+      </div>
+    </div>
+  </div>
+
   <!-- ABOUT -->
-  <section class="section about" id="about">
+  <section id="about" class="section about">
     <div class="container">
       <div class="about-grid">
-        <div class="about-visual">
-          <div class="about-img-wrap">
-            <div class="about-img-placeholder">
-              <i class="fas fa-solar-panel"></i>
-            </div>
-            <div class="about-badge-float">
-              <i class="fas fa-award"></i>
-              <span>Trusted Since Day One</span>
+        <div class="about-images">
+          <div class="about-img-main">
+            <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=700&q=85&fit=crop" alt="Solar installation" />
+          </div>
+          <div class="about-img-side">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=85&fit=crop" alt="Solar technician" />
+          </div>
+          <div class="about-img-badge">
+            <i class="fas fa-award"></i>
+            <div>
+              <strong>Ghana's #1</strong>
+              <span>Solar Company</span>
             </div>
           </div>
         </div>
-        <div class="about-text">
-          <div class="section-tag">About Us</div>
-          <h2 class="section-title">Ghana's Premier Solar Energy Company</h2>
-          <p>Dan &amp; Dor Solar Company Limited is a proudly Ghanaian solar energy company headquartered in Bogoso, Western Region. We were founded with a clear mission: to make clean, reliable, and affordable solar energy accessible to every Ghanaian — from the individual homeowner to large-scale commercial enterprises.</p>
-          <p>We understand the energy challenges facing Ghanaian families and businesses. Rising electricity tariffs and frequent power outages are disruptions we believe solar energy can solve. Our team of certified engineers and technicians delivers world-class installations backed by outstanding after-sales support.</p>
-          <div class="values-grid">
-            <div class="value-card">
-              <i class="fas fa-shield-alt"></i>
-              <h4>Reliability</h4>
-              <p>Systems built to last, backed by comprehensive warranties and ongoing maintenance support.</p>
+        <div class="about-content">
+          <div class="section-label">About Dan &amp; Dor Solar</div>
+          <h2 class="section-heading">We're on a Mission to Power Every Ghanaian Home</h2>
+          <p class="about-lead">Founded in Bogoso, Western Region, Dan &amp; Dor Solar Company Limited was built on one belief: every Ghanaian deserves reliable, affordable energy.</p>
+          <p class="about-body">From rising electricity tariffs to constant outages, we've seen the challenges facing our communities first-hand. That's why we deliver world-class solar installations backed by a team of certified engineers, genuine products, and outstanding after-sales support.</p>
+          <div class="about-values">
+            <div class="value-item">
+              <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+              <div>
+                <h4>Reliability</h4>
+                <p>Systems built to last decades, backed by comprehensive warranties.</p>
+              </div>
             </div>
-            <div class="value-card">
-              <i class="fas fa-tags"></i>
-              <h4>Affordability</h4>
-              <p>Flexible payment plans and credit options to make solar accessible to everyone.</p>
+            <div class="value-item">
+              <div class="value-icon"><i class="fas fa-tags"></i></div>
+              <div>
+                <h4>Affordability</h4>
+                <p>Flexible installment plans so solar is within everyone's reach.</p>
+              </div>
             </div>
-            <div class="value-card">
-              <i class="fas fa-star"></i>
-              <h4>Quality</h4>
-              <p>We use only industry-leading, certified solar products from top global manufacturers.</p>
+            <div class="value-item">
+              <div class="value-icon"><i class="fas fa-star"></i></div>
+              <div>
+                <h4>Quality</h4>
+                <p>Only certified, industry-leading products from top manufacturers.</p>
+              </div>
             </div>
           </div>
+          <a href="#contact" class="btn-primary">Talk to an Expert <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section class="section services bg-light" id="services">
+  <section id="services" class="section services">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">What We Offer</div>
-        <h2 class="section-title">Our Solar Products &amp; Services</h2>
-        <p class="section-sub">Comprehensive solar energy solutions tailored to your needs — from installation to maintenance.</p>
+        <div class="section-label">What We Offer</div>
+        <h2 class="section-heading">Solar Solutions for Every Need</h2>
+        <p class="section-sub">From a single home to a large commercial facility — we have the perfect solar solution for you.</p>
       </div>
       <div class="services-grid">
 
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-home"></i></div>
-          <h3>Residential Installation</h3>
-          <p>Power your home with a custom solar system designed to match your energy needs. Reduce monthly bills and gain energy independence.</p>
-          <ul class="service-features">
-            <li><i class="fas fa-check"></i> Custom system sizing</li>
-            <li><i class="fas fa-check"></i> Professional installation</li>
-            <li><i class="fas fa-check"></i> Grid-tie &amp; off-grid options</li>
-          </ul>
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80&fit=crop" alt="Residential solar" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon-wrap"><i class="fas fa-home"></i></div>
+            <h3>Residential Installation</h3>
+            <p>Custom solar systems designed for your home's specific energy needs. Reduce your monthly bills and gain full energy independence.</p>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Custom system sizing &amp; design</li>
+              <li><i class="fas fa-check-circle"></i> Grid-tie &amp; off-grid options</li>
+              <li><i class="fas fa-check-circle"></i> Professional installation</li>
+            </ul>
+          </div>
         </div>
 
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-building"></i></div>
-          <h3>Commercial Installation</h3>
-          <p>Scale up your business energy savings with industrial-grade solar arrays. Ideal for offices, factories, churches, and schools.</p>
-          <ul class="service-features">
-            <li><i class="fas fa-check"></i> High-capacity systems</li>
-            <li><i class="fas fa-check"></i> ROI analysis included</li>
-            <li><i class="fas fa-check"></i> Minimal business disruption</li>
-          </ul>
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80&fit=crop" alt="Commercial solar" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon-wrap"><i class="fas fa-building"></i></div>
+            <h3>Commercial Installation</h3>
+            <p>Industrial-grade solar arrays for offices, factories, churches, and schools. Dramatic savings at scale.</p>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> High-capacity systems</li>
+              <li><i class="fas fa-check-circle"></i> ROI analysis included</li>
+              <li><i class="fas fa-check-circle"></i> Minimal business disruption</li>
+            </ul>
+          </div>
         </div>
 
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-battery-full"></i></div>
-          <h3>Inverters &amp; Batteries</h3>
-          <p>Stay powered day and night with premium inverters and deep-cycle battery storage systems. Never worry about power outages again.</p>
-          <ul class="service-features">
-            <li><i class="fas fa-check"></i> Lithium &amp; AGM batteries</li>
-            <li><i class="fas fa-check"></i> Hybrid inverters</li>
-            <li><i class="fas fa-check"></i> 24/7 power backup</li>
-          </ul>
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1620554638507-37c4879e1d3e?w=600&q=80&fit=crop" alt="Battery storage" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon-wrap"><i class="fas fa-battery-full"></i></div>
+            <h3>Inverters &amp; Batteries</h3>
+            <p>Premium inverters and deep-cycle battery storage systems. Stay powered 24/7 even when the grid goes down.</p>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Lithium &amp; AGM batteries</li>
+              <li><i class="fas fa-check-circle"></i> Hybrid inverters</li>
+              <li><i class="fas fa-check-circle"></i> 24/7 power backup</li>
+            </ul>
+          </div>
         </div>
 
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-tint"></i></div>
-          <h3>Solar Water Heaters</h3>
-          <p>Enjoy hot water every day using the power of the sun. Our solar water heating systems are efficient, durable, and cost-saving.</p>
-          <ul class="service-features">
-            <li><i class="fas fa-check"></i> Residential &amp; commercial</li>
-            <li><i class="fas fa-check"></i> No electricity needed</li>
-            <li><i class="fas fa-check"></i> Long service life</li>
-          </ul>
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80&fit=crop" alt="Solar water heater" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon-wrap"><i class="fas fa-tint"></i></div>
+            <h3>Solar Water Heaters</h3>
+            <p>Hot water every morning powered entirely by sunlight. Efficient, durable systems with zero running costs.</p>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Residential &amp; commercial</li>
+              <li><i class="fas fa-check-circle"></i> No electricity needed</li>
+              <li><i class="fas fa-check-circle"></i> Long service life</li>
+            </ul>
+          </div>
         </div>
 
         <div class="service-card">
-          <div class="service-icon"><i class="fas fa-tools"></i></div>
-          <h3>Maintenance &amp; Repairs</h3>
-          <p>Keep your solar system performing at peak efficiency with our scheduled maintenance plans and fast repair services.</p>
-          <ul class="service-features">
-            <li><i class="fas fa-check"></i> Routine inspections</li>
-            <li><i class="fas fa-check"></i> Panel cleaning service</li>
-            <li><i class="fas fa-check"></i> Emergency repairs</li>
-          </ul>
+          <div class="service-img">
+            <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&q=80&fit=crop" alt="Maintenance" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon-wrap"><i class="fas fa-tools"></i></div>
+            <h3>Maintenance &amp; Repairs</h3>
+            <p>Keep your system performing at peak efficiency with scheduled maintenance plans and rapid repair services.</p>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Routine inspections</li>
+              <li><i class="fas fa-check-circle"></i> Panel cleaning service</li>
+              <li><i class="fas fa-check-circle"></i> Emergency repairs</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="service-card service-card--highlight">
-          <div class="service-icon"><i class="fas fa-credit-card"></i></div>
-          <h3>Flexible Payment Plans</h3>
-          <p>We believe everyone deserves solar. Our credit and installment plans make it possible to go solar with little or no upfront cost.</p>
-          <ul class="service-features">
-            <li><i class="fas fa-check"></i> Low deposit options</li>
-            <li><i class="fas fa-check"></i> Monthly installments</li>
-            <li><i class="fas fa-check"></i> No hidden charges</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary btn-sm">Apply Now</a>
+        <div class="service-card service-card-cta">
+          <div class="service-cta-content">
+            <i class="fas fa-credit-card"></i>
+            <h3>Flexible Payment Plans</h3>
+            <p>Go solar today with little or no upfront cost. Our installment plans are designed to make clean energy accessible to everyone in Ghana.</p>
+            <div class="service-cta-points">
+              <span><i class="fas fa-check"></i> Low deposit</span>
+              <span><i class="fas fa-check"></i> Monthly payments</span>
+              <span><i class="fas fa-check"></i> No hidden fees</span>
+            </div>
+            <a href="#contact" class="btn-white">Apply Today <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
-  <section class="section how-it-works" id="how-it-works">
+  <!-- PROCESS -->
+  <section id="process" class="section process">
     <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Our Process</div>
-        <h2 class="section-title">How It Works</h2>
-        <p class="section-sub">Getting solar with Dan &amp; Dor is simple, transparent, and stress-free.</p>
-      </div>
-      <div class="steps-grid">
-        <div class="step">
-          <div class="step-num">01</div>
-          <div class="step-icon"><i class="fas fa-comments"></i></div>
-          <h3>Free Consultation</h3>
-          <p>Contact us and speak with one of our solar experts. We'll discuss your energy needs, goals, and budget at no cost to you.</p>
+      <div class="process-grid">
+        <div class="process-left">
+          <div class="section-label">How It Works</div>
+          <h2 class="section-heading">From Call to Clean Energy in 4 Simple Steps</h2>
+          <p class="section-sub">Our streamlined process means you go from inquiry to fully powered in the shortest time possible — with zero stress.</p>
+          <a href="#contact" class="btn-primary">Start Your Journey <i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
-        <div class="step">
-          <div class="step-num">02</div>
-          <div class="step-icon"><i class="fas fa-search-location"></i></div>
-          <h3>Site Assessment</h3>
-          <p>Our team visits your property to assess your roof, wiring, and energy usage to design the perfect solar system for you.</p>
-        </div>
-        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
-        <div class="step">
-          <div class="step-num">03</div>
-          <div class="step-icon"><i class="fas fa-hard-hat"></i></div>
-          <h3>Installation</h3>
-          <p>Our certified technicians install your system quickly and safely, with minimal disruption to your home or business.</p>
-        </div>
-        <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
-        <div class="step">
-          <div class="step-num">04</div>
-          <div class="step-icon"><i class="fas fa-headset"></i></div>
-          <h3>After-Sales Support</h3>
-          <p>We don't disappear after installation. Our team provides ongoing monitoring, maintenance, and 24/7 customer support.</p>
+        <div class="process-right">
+          <div class="process-step">
+            <div class="process-num">01</div>
+            <div class="process-content">
+              <div class="process-icon"><i class="fas fa-comments"></i></div>
+              <div>
+                <h3>Free Consultation</h3>
+                <p>Call or WhatsApp us. Our solar experts discuss your energy needs, goals, and budget — at absolutely no cost.</p>
+              </div>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-num">02</div>
+            <div class="process-content">
+              <div class="process-icon"><i class="fas fa-map-marked-alt"></i></div>
+              <div>
+                <h3>Site Assessment</h3>
+                <p>We visit your property to evaluate your roof, electrical setup, and energy consumption to design the ideal system.</p>
+              </div>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-num">03</div>
+            <div class="process-content">
+              <div class="process-icon"><i class="fas fa-solar-panel"></i></div>
+              <div>
+                <h3>Expert Installation</h3>
+                <p>Our certified engineers install your system quickly, safely, and cleanly — with minimal disruption to your routine.</p>
+              </div>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-num">04</div>
+            <div class="process-content">
+              <div class="process-icon"><i class="fas fa-headset"></i></div>
+              <div>
+                <h3>Ongoing Support</h3>
+                <p>We stay with you long after installation — monitoring, maintenance, and 24/7 customer support whenever you need us.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY SOLAR -->
-  <section class="section why-solar bg-dark" id="why-solar">
+  <!-- WHY SOLAR (image section) -->
+  <section id="why-solar" class="why-solar">
+    <div class="why-solar-bg">
+      <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1800&q=85&fit=crop" alt="Solar panels" />
+      <div class="why-solar-overlay"></div>
+    </div>
     <div class="container">
-      <div class="section-header light">
-        <div class="section-tag">Benefits</div>
-        <h2 class="section-title">Why Go Solar?</h2>
-        <p class="section-sub">Solar energy is more than a trend — it's a smart, long-term investment for your family and business.</p>
+      <div class="why-solar-header">
+        <div class="section-label light">Why Go Solar?</div>
+        <h2 class="section-heading light">6 Reasons Ghana is Going Solar</h2>
       </div>
-      <div class="benefits-grid">
-        <div class="benefit-card">
-          <div class="benefit-icon"><i class="fas fa-money-bill-wave"></i></div>
-          <h3>Save on Electricity Bills</h3>
-          <p>Dramatically reduce or eliminate your monthly electricity bills. Most customers see savings within the first month of installation.</p>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-money-bill-wave"></i></div>
+          <h3>Save on Bills</h3>
+          <p>Reduce or eliminate your electricity bills. Most customers save up to 90% from month one.</p>
         </div>
-        <div class="benefit-card">
-          <div class="benefit-icon"><i class="fas fa-leaf"></i></div>
-          <h3>Clean, Renewable Energy</h3>
-          <p>Solar power produces zero emissions. By going solar, you're actively contributing to a cleaner, greener Ghana for future generations.</p>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-leaf"></i></div>
+          <h3>Zero Emissions</h3>
+          <p>Solar produces no harmful emissions — actively contributing to a greener Ghana for future generations.</p>
         </div>
-        <div class="benefit-card">
-          <div class="benefit-icon"><i class="fas fa-plug"></i></div>
-          <h3>Power During Outages</h3>
-          <p>Never suffer through another power outage. With battery storage, your home or business stays fully powered even when the grid goes down.</p>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-plug"></i></div>
+          <h3>No More Outages</h3>
+          <p>With battery backup, your home or business stays fully powered even when the national grid fails.</p>
         </div>
-        <div class="benefit-card">
-          <div class="benefit-icon"><i class="fas fa-chart-line"></i></div>
-          <h3>Long-Term Investment</h3>
-          <p>Solar panels increase property value and pay for themselves over time. With a 25+ year lifespan, the returns are exceptional.</p>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Property Value</h3>
+          <p>Solar increases your property's market value. It's a 25-year investment that pays for itself many times over.</p>
         </div>
-        <div class="benefit-card">
-          <div class="benefit-icon"><i class="fas fa-sun"></i></div>
-          <h3>Ghana's Perfect Climate</h3>
-          <p>Ghana enjoys abundant sunshine year-round, making it one of the best locations in the world for solar energy generation.</p>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-sun"></i></div>
+          <h3>Perfect Climate</h3>
+          <p>Ghana receives 4–6 peak sun hours daily — one of the best locations in the world for solar generation.</p>
         </div>
-        <div class="benefit-card">
-          <div class="benefit-icon"><i class="fas fa-tools"></i></div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-cog"></i></div>
           <h3>Low Maintenance</h3>
-          <p>Solar systems require minimal maintenance. With no moving parts and durable panels, your system will run efficiently for decades.</p>
+          <p>No moving parts. Solar panels are built to last 25+ years with only minimal periodic cleaning needed.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- TESTIMONIALS -->
-  <section class="section testimonials" id="testimonials">
+  <section id="testimonials" class="section testimonials">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag">Customer Reviews</div>
-        <h2 class="section-title">What Our Customers Say</h2>
-        <p class="section-sub">Don't just take our word for it. Here's what our satisfied customers across Ghana have to say.</p>
+        <div class="section-label">Customer Stories</div>
+        <h2 class="section-heading">Real Ghanaians. Real Results.</h2>
+        <p class="section-sub">Over 500 satisfied customers across the Western Region and beyond.</p>
       </div>
       <div class="testimonials-grid">
-
-        <div class="testimonial-card">
-          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p>"Dan &amp; Dor Solar completely transformed my life. My electricity bill went from GHS 600 to almost zero. The installation was professional and they explained everything clearly. Highly recommend!"</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">KA</div>
-            <div>
-              <strong>Kwame Asante</strong>
-              <span>Homeowner, Bogoso</span>
+        <div class="testi-card testi-featured">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&fit=crop" alt="Testimonial background" class="testi-bg-img" />
+          <div class="testi-overlay"></div>
+          <div class="testi-content">
+            <div class="testi-stars">★★★★★</div>
+            <p>"Dan &amp; Dor Solar completely changed our lives. My electricity bill dropped from GHS 600 to nearly zero. The team was professional, fast, and very knowledgeable. I recommend them to everyone."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">KA</div>
+              <div>
+                <strong>Kwame Asante</strong>
+                <span>Homeowner, Bogoso</span>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="testimonial-card">
-          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p>"We installed a commercial system for our church and the savings have been incredible. The team was punctual, polite, and very skilled. No more generator costs. God bless Dan &amp; Dor!"</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">PO</div>
+        <div class="testi-card">
+          <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+          <div class="testi-stars dark">★★★★★</div>
+          <p>"We installed a large system for our church. No more generator costs and the congregation is very happy. The installation was completed in one day with zero disruption. God bless Dan &amp; Dor!"</p>
+          <div class="testi-author dark">
+            <div class="testi-avatar orange">PO</div>
             <div>
               <strong>Pastor Emmanuel Owusu</strong>
               <span>Church Administrator, Tarkwa</span>
             </div>
           </div>
         </div>
-
-        <div class="testimonial-card">
-          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p>"I was skeptical at first, but the flexible payment plan made it easy to get started. Now I have 24/7 power and my shop is running better than ever. Thank you Dan &amp; Dor Solar!"</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">AB</div>
+        <div class="testi-card">
+          <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+          <div class="testi-stars dark">★★★★★</div>
+          <p>"The flexible payment plan made solar possible for me. Now my shop runs 24/7 with zero power cuts. Sales have gone up because I can work through the night. Absolutely worth every pesewa!"</p>
+          <div class="testi-author dark">
+            <div class="testi-avatar orange">AB</div>
             <div>
               <strong>Abena Boateng</strong>
               <span>Shop Owner, Prestea</span>
             </div>
           </div>
         </div>
-
-        <div class="testimonial-card">
-          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p>"Excellent service from start to finish. The site assessment was thorough, installation was fast, and their after-sales team checks in regularly. Best investment I've made for my home."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">YM</div>
-            <div>
-              <strong>Yaw Mensah</strong>
-              <span>Homeowner, Bogoso</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p>"Our school now has reliable power for computers and lights. Students can study in the evening with no interruptions. Dan &amp; Dor Solar has truly impacted our community."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">GD</div>
+        <div class="testi-card">
+          <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+          <div class="testi-stars dark">★★★★★</div>
+          <p>"Our school now has reliable power for computers and study lights. Children can learn after dark and teachers can use projectors. Dan &amp; Dor has truly transformed our community."</p>
+          <div class="testi-author dark">
+            <div class="testi-avatar orange">GD</div>
             <div>
               <strong>Grace Darko</strong>
               <span>School Headmistress, Western Region</span>
             </div>
           </div>
         </div>
-
-        <div class="testimonial-card">
-          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <p>"The solar water heater is amazing! Hot water every morning without any electricity cost. The team installed it in just a few hours and it's been working perfectly for over a year."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">FA</div>
+        <div class="testi-card">
+          <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+          <div class="testi-stars dark">★★★★★</div>
+          <p>"The solar water heater is incredible. Hot water every morning at zero electricity cost. Installation was done in just a few hours and it has worked perfectly for over a year now."</p>
+          <div class="testi-author dark">
+            <div class="testi-avatar orange">FA</div>
             <div>
               <strong>Fatima Acheampong</strong>
               <span>Homeowner, Tarkwa</span>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-banner-bg">
+      <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1800&q=85&fit=crop" alt="Solar energy" />
+      <div class="cta-banner-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Make the Switch to Solar?</h2>
+        <p>Get a free, no-obligation quote today. Our experts will design the perfect system for your home or business.</p>
+        <div class="cta-actions">
+          <a href="#contact" class="btn-primary-lg">Get My Free Quote</a>
+          <a href="https://wa.me/233598565277?text=Hello%20Dan%20%26%20Dor%20Solar%2C%20I%20need%20a%20free%20quote." class="btn-whatsapp-lg" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i> WhatsApp Us Now
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="section contact" id="contact">
+  <section id="contact" class="section contact">
     <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Get In Touch</div>
-        <h2 class="section-title">Contact Us Today</h2>
-        <p class="section-sub">Ready to go solar? Get in touch for a free consultation and quote. We're here to help.</p>
-      </div>
       <div class="contact-grid">
-        <div class="contact-form-wrap">
-          <form class="contact-form" id="contactForm">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Full Name *</label>
-                <input type="text" id="name" name="name" placeholder="Your full name" required />
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone Number *</label>
-                <input type="tel" id="phone" name="phone" placeholder="+233 XXX XXX XXX" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="your@email.com" />
-            </div>
-            <div class="form-group">
-              <label for="service">Service Interested In</label>
-              <select id="service" name="service">
-                <option value="">Select a service...</option>
-                <option>Residential Solar Installation</option>
-                <option>Commercial Solar Installation</option>
-                <option>Solar Inverters &amp; Batteries</option>
-                <option>Solar Water Heater</option>
-                <option>Maintenance &amp; Repairs</option>
-                <option>Payment Plan Inquiry</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Message *</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell us about your energy needs..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-full">
-              <i class="fas fa-paper-plane"></i> Send Message
-            </button>
-            <div class="form-success" id="formSuccess">
-              <i class="fas fa-check-circle"></i> Thank you! We'll contact you within 24 hours.
-            </div>
-          </form>
-        </div>
+        <div class="contact-left">
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-heading">Let's Power Your World</h2>
+          <p>Fill in the form and one of our solar experts will contact you within 24 hours with a tailored solution and free quote.</p>
 
-        <div class="contact-info">
-          <div class="contact-info-card">
-            <h3>Get In Touch</h3>
-            <div class="contact-detail">
+          <div class="contact-details">
+            <a href="tel:+233598565277" class="contact-detail-item">
               <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
               <div>
-                <strong>Phone / WhatsApp</strong>
-                <a href="tel:+233598565277">+233 598 565 277</a>
+                <strong>Call / WhatsApp</strong>
+                <span>+233 598 565 277</span>
               </div>
-            </div>
-            <div class="contact-detail">
+            </a>
+            <a href="mailto:Dananddorsolarcompanyltd@gmail.com" class="contact-detail-item">
               <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
               <div>
-                <strong>Email</strong>
-                <a href="mailto:Dananddorsolarcompanyltd@gmail.com">Dananddorsolarcompanyltd@gmail.com</a>
+                <strong>Email Us</strong>
+                <span>Dananddorsolarcompanyltd@gmail.com</span>
               </div>
-            </div>
-            <div class="contact-detail">
+            </a>
+            <div class="contact-detail-item">
               <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
               <div>
-                <strong>Location</strong>
+                <strong>Our Location</strong>
                 <span>Bogoso, Western Region, Ghana</span>
               </div>
             </div>
-            <div class="contact-detail">
+            <div class="contact-detail-item">
               <div class="contact-detail-icon"><i class="fas fa-clock"></i></div>
               <div>
                 <strong>Business Hours</strong>
-                <span>Mon – Sat: 8:00 AM – 6:00 PM</span>
+                <span>Monday – Saturday: 8AM – 6PM</span>
               </div>
             </div>
-            <a href="https://wa.me/233598565277?text=Hello%20Dan%20%26%20Dor%20Solar%2C%20I%20would%20like%20to%20enquire%20about%20your%20solar%20services." class="btn btn-whatsapp" target="_blank" rel="noopener">
-              <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-            </a>
           </div>
 
-          <div class="map-wrap">
+          <div class="contact-map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15880.123!2d-2.0556!3d5.5483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfddfe2e7e4c2d41%3A0xd7e1d3c3e7e7e7e7!2sBogoso%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1700000000000!5m2!1sen!2sgh"
-              width="100%"
-              height="220"
-              style="border:0; border-radius: 12px;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Dan & Dor Solar Location - Bogoso, Ghana">
+              width="100%" height="200" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Bogoso Ghana Map">
             </iframe>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <div class="contact-form-card">
+            <h3>Request a Free Quote</h3>
+            <form id="contactForm">
+              <div class="field-row">
+                <div class="field">
+                  <label>Full Name *</label>
+                  <input type="text" name="name" placeholder="Your full name" required />
+                </div>
+                <div class="field">
+                  <label>Phone Number *</label>
+                  <input type="tel" name="phone" placeholder="+233 XXX XXX XXX" required />
+                </div>
+              </div>
+              <div class="field">
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="your@email.com" />
+              </div>
+              <div class="field">
+                <label>Service Interested In</label>
+                <select name="service">
+                  <option value="">Select a service...</option>
+                  <option>Residential Solar Installation</option>
+                  <option>Commercial Solar Installation</option>
+                  <option>Solar Inverters &amp; Batteries</option>
+                  <option>Solar Water Heater</option>
+                  <option>Maintenance &amp; Repairs</option>
+                  <option>Flexible Payment Plan</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Tell Us More *</label>
+                <textarea name="message" rows="4" placeholder="Describe your energy needs or property..." required></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                Send My Request <i class="fas fa-paper-plane"></i>
+              </button>
+              <div class="form-success" id="formSuccess">
+                <i class="fas fa-check-circle"></i> Thank you! We'll be in touch within 24 hours.
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -457,84 +582,75 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="logo">
-            <span class="logo-icon"><i class="fas fa-sun"></i></span>
-            <span class="logo-text">Dan <span class="amp">&amp;</span> Dor <span class="logo-sub">Solar Co. Ltd</span></span>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="nav-logo">
+              <div class="nav-logo-icon"><i class="fas fa-sun"></i></div>
+              <div class="nav-logo-text">
+                <span class="nav-logo-name">Dan &amp; Dor</span>
+                <span class="nav-logo-sub">Solar Co. Ltd</span>
+              </div>
+            </a>
+            <p>Ghana's trusted solar energy company. Powering homes and businesses with clean, affordable, and reliable solar energy from Bogoso, Western Region.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+              <a href="https://wa.me/233598565277" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
           </div>
-          <p>Powering Ghana with clean, affordable, and reliable solar energy solutions. Proudly based in Bogoso, Western Region.</p>
-          <div class="social-links">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://wa.me/233598565277" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.youtube.com/" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#process">Our Process</a></li>
+              <li><a href="#why-solar">Why Solar?</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
           </div>
-        </div>
-
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#why-solar">Why Solar?</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#services">Residential Installation</a></li>
-            <li><a href="#services">Commercial Installation</a></li>
-            <li><a href="#services">Inverters &amp; Batteries</a></li>
-            <li><a href="#services">Solar Water Heaters</a></li>
-            <li><a href="#services">Maintenance &amp; Repairs</a></li>
-            <li><a href="#services">Flexible Payment Plans</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-contact">
-          <h4>Contact Info</h4>
-          <div class="footer-contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Bogoso, Western Region, Ghana</span>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Residential Solar</a></li>
+              <li><a href="#services">Commercial Solar</a></li>
+              <li><a href="#services">Inverters &amp; Batteries</a></li>
+              <li><a href="#services">Solar Water Heaters</a></li>
+              <li><a href="#services">Maintenance</a></li>
+              <li><a href="#services">Payment Plans</a></li>
+            </ul>
           </div>
-          <div class="footer-contact-item">
-            <i class="fas fa-phone"></i>
-            <a href="tel:+233598565277">+233 598 565 277</a>
-          </div>
-          <div class="footer-contact-item">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:Dananddorsolarcompanyltd@gmail.com">Dananddorsolarcompanyltd@gmail.com</a>
-          </div>
-          <div class="footer-contact-item">
-            <i class="fas fa-clock"></i>
-            <span>Mon – Sat: 8:00 AM – 6:00 PM</span>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul class="footer-contact-list">
+              <li><i class="fas fa-map-marker-alt"></i> Bogoso, Western Region, Ghana</li>
+              <li><i class="fas fa-phone"></i> <a href="tel:+233598565277">+233 598 565 277</a></li>
+              <li><i class="fas fa-envelope"></i> <a href="mailto:Dananddorsolarcompanyltd@gmail.com">Dananddorsolarcompanyltd@gmail.com</a></li>
+              <li><i class="fas fa-clock"></i> Mon – Sat: 8AM – 6PM</li>
+            </ul>
           </div>
         </div>
       </div>
-
-      <div class="footer-bottom">
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
         <p>&copy; <span id="year"></span> Dan &amp; Dor Solar Company Limited. All rights reserved.</p>
-        <p>Made with <i class="fas fa-heart" style="color: #e86b00;"></i> in Ghana</p>
+        <p>Made with <i class="fas fa-heart"></i> in Ghana 🇬🇭</p>
       </div>
     </div>
   </footer>
 
-  <!-- WHATSAPP FLOATING BUTTON -->
-  <a class="whatsapp-float" href="https://wa.me/233598565277?text=Hello%20Dan%20%26%20Dor%20Solar%2C%20I%20would%20like%20to%20enquire%20about%20your%20solar%20services." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <!-- WHATSAPP FLOAT -->
+  <a class="wa-float" href="https://wa.me/233598565277?text=Hello%20Dan%20%26%20Dor%20Solar%2C%20I%20would%20like%20a%20free%20quote." target="_blank" rel="noopener" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
-    <span class="whatsapp-tooltip">Chat with us!</span>
+    <span class="wa-label">Chat with us</span>
   </a>
 
   <!-- BACK TO TOP -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <button class="back-top" id="backTop" aria-label="Back to top">
     <i class="fas fa-arrow-up"></i>
   </button>
 
