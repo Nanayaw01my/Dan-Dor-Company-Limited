@@ -103,6 +103,8 @@ input,select,textarea,button { font-family:inherit; }
   display:flex; align-items:center; justify-content:space-between; gap:24px;
 }
 .nav-logo { display:flex; align-items:center; gap:12px; }
+.nav-logo-img { height:48px; width:auto; object-fit:contain; display:block; }
+.footer-logo-img { height:56px; width:auto; object-fit:contain; display:block; margin-bottom:16px; }
 .nav-logo-icon {
   width:42px; height:42px; background:var(--orange); border-radius:12px;
   display:flex; align-items:center; justify-content:center;
