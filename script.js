@@ -3,30 +3,30 @@
 (function(){
   'use strict';
 
-  // Navbar
-  const nav = document.getElementById('navbar');
-  const topBtn = document.getElementById('topBtn');
+  // Navbar scroll
+  const navbar = document.querySelector('.navbar');
+  const totop  = document.getElementById('toTop');
   window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 50);
-    topBtn.classList.toggle('show', window.scrollY > 500);
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+    totop.classList.toggle('show', window.scrollY > 500);
   }, { passive:true });
-  topBtn.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
+  totop.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
 
-  // Burger
-  const burger = document.getElementById('burger');
-  const navLinks = document.getElementById('navLinks');
+  // Burger menu
+  const burger  = document.getElementById('navBurger');
+  const navMenu = document.querySelector('.nav-menu');
   burger.addEventListener('click', () => {
     burger.classList.toggle('open');
-    navLinks.classList.toggle('open');
+    navMenu.classList.toggle('open');
   });
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  navMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
     burger.classList.remove('open');
-    navLinks.classList.remove('open');
+    navMenu.classList.remove('open');
   }));
 
   // Scroll reveal
   const revealEls = document.querySelectorAll(
-    '.svc-card,.gal-item,.why-card,.testi-card,.step-item,.pillar,.contact-item,.ceo-wrap,.about-wrap,.ceo-figures,.hero-numbers'
+    '.svc,.gal-cell,.why-card,.tcard,.testi-feat,.step-card,.pillar,.cinfo,.ceo-grid,.about-grid,.ceo-stats,.hero-stats'
   );
   revealEls.forEach((el, i) => {
     el.classList.add('reveal');
@@ -46,24 +46,24 @@
       if(n >= target) clearInterval(t);
     }, 28);
   }
-  const counterObs = new IntersectionObserver(entries => {
-    if(entries[0].isIntersecting){
-      document.querySelectorAll('.counter').forEach(el => {
-        runCounter(el, parseInt(el.dataset.target));
-      });
-      counterObs.disconnect();
-    }
-  }, { threshold: 0.6 });
-  const heroNums = document.querySelector('.hero-numbers');
-  if(heroNums) counterObs.observe(heroNums);
+  const statsEl = document.querySelector('.hero-stats');
+  if(statsEl){
+    const cObs = new IntersectionObserver(entries => {
+      if(entries[0].isIntersecting){
+        document.querySelectorAll('.hcount').forEach(el => runCounter(el, parseInt(el.dataset.to)));
+        cObs.disconnect();
+      }
+    }, { threshold: 0.6 });
+    cObs.observe(statsEl);
+  }
 
   // Contact form
-  const form = document.getElementById('contactForm');
+  const form    = document.getElementById('contactForm');
   const success = document.getElementById('formSuccess');
   if(form){
     form.addEventListener('submit', e => {
       e.preventDefault();
-      const btn = form.querySelector('.f-submit');
+      const btn = form.querySelector('.fsub');
       btn.disabled = true;
       btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
       setTimeout(() => {
